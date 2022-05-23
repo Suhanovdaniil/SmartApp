@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/birds_name"
+            android:text="BirdsName"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="111dp"
+        android:layout_height="97dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/b1" />
+
+
+    </RelativeLayout>
+
+

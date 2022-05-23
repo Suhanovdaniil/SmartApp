@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Switch
+        android:id="@+id/switch_enable_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth_on_off"
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:id="@+id/frame_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/bluetooth_off"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/frame_control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_enable_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="@string/start_search" />
+
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lv_bt_device"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"></ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/frameLedControls"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_disconnect"
+            android:text="@string/disconnect"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Switch
+            android:id="@+id/switch_led"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Вкл/Выкл подсветки"
+            android:textColor="@color/color_black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_moveColor"
+            android:text="@string/move_color"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_data"
+            android:text="@string/data"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="450dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/FrameMoveColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/greenbtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="Зелёный"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.23" />
+
+        <Button
+            android:id="@+id/purplebtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="фиолетовый"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.664" />
+
+        <Button
+            android:id="@+id/orangebtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="Ораньжевый"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.447" />
+
+        <Button
+            android:id="@+id/redbtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="Красный"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.231" />
+
+        <Button
+            android:id="@+id/bluebtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="Синий"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.231" />
+
+        <Button
+            android:id="@+id/whitebtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="Белый"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.664" />
+
+        <Button
+            android:id="@+id/pinkbtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="Розовый"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.447" />
+
+        <Button
+            android:id="@+id/yellowbtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="жёлтый"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.446" />
+
+        <Button
+            android:id="@+id/secretbtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="=)"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.664" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/FrameData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/et_console"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="15"
+            android:editable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.047"
+            android:gravity="bottom"/>
+
+        <Button
+            android:id="@+id/btn_Rb"
+            android:text="Обновить данные"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_console"
+            app:layout_constraintVertical_bias="0.185" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

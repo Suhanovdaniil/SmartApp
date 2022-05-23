@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SmartApp</string>
+    <string name="title_activity_map">Map</string>
+    <string name="google_maps_key" />
+    <string name="bluetooth_on_off">Вкл./Выкл. Bluеtooth</string>
+    <string name="bluetooth_off">Bluеtooth выключен</string>
+    <string name="start_search">Начать поиск</string>
+    <string name="bluetooth_not_supported">Bluetooth не поддерживается</string>
+    <string name="stop_search">Остановить поиск</string>
+    <string name="dissconect">Отключиться</string>
+    <string name="move_color">Изменение цвета</string>
+    <string name="disconnect">Отключиться</string>
+    <string name="led_red">Красный светодиод</string>
+    <string name="data">Данные</string>
+    <string name="conecting">Подключение...</string>
+    <string name="please">Подождите, пожалуйста...</string>
+
+</resources>
